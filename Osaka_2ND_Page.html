@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Tourism</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.8;
+        }
+
+        .page-shell {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-header {
+            padding: 32px 24px 16px;
+            border-bottom: 1px solid #eee;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-size: clamp(2rem, 4vw, 2.6rem);
+            margin: 0 0 6px;
+            font-weight: 600;
+        }
+
+        .page-header p {
+            margin: 0;
+            font-size: 0.95rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #888888;
+        }
+
+        .page-content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 24px 60px;
+        }
+
+        .card {
+            border-radius: 18px;
+            border: 1px solid #eee;
+            padding: 24px 24px 20px;
+            margin-bottom: 20px;
+            background: #fafafa;
+        }
+
+        .card--split {
+            display: grid;
+            grid-template-columns: 1.3fr 1.2fr;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .card h2 {
+            margin: 0 0 6px;
+            font-size: 1.4rem;
+        }
+
+        .card span {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 0.75rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #888888;
+        }
+
+        .card-list {
+            padding-left: 18px;
+            margin: 10px 0 0;
+            font-size: 0.95rem;
+        }
+
+        .card-list li + li {
+            margin-top: 4px;
+        }
+
+        .card-image {
+            border-radius: 14px;
+            overflow: hidden;
+            height: 260px;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.9rem;
+            text-decoration: none;
+            color: #1a1a1a;
+            margin-top: 16px;
+        }
+
+        .back-link::before {
+            content: "←";
+            font-size: 0.95rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 720px) {
+            .card--split {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-shell">
+        <header class="page-header">
+            <h1>Osaka: The Guest Citizen Protocol</h1>
+            <p>How to understand the real culture of Osaka</p>
+        </header>
+
+        <main class="page-content">
+            <section class="card card--split">
+                <div>
+                    <span>The Guest Citizen Protocol</span>
+                    <h2>Responsible Travel</h2>
+                    <ul class="card-list">
+                        <li>Any tourist won't understand the real traditional culture of Osaka if they don't go beyond the city and the best photo spots.</li>
+                        <li>Some travelers are traveling just to get the best picture that looks good on social media for other people to see and like. But some travelers actually go beyond and want to experience the real culture of the city and travel for the experience.</li>
+                        <li>Travelers who travel for the photos travel to just use the city as a commodity and exploit it for their own benefit. The real travelers actually take time to explore the country and the city and try to understand the local culture and traditions and experience a new way of living and a new place.</li>
+                    </ul>
+                </div>
+                <div class="card-image">
+                    <img src="DSC_3115.JPG" alt="Back alley scene in Osaka">
+                </div>
+            </section>
+
+            <a class="back-link" href="Osaka_Travle_Guide.html">Back to main guide</a>
+        </main>
+    </div>
+</body>
+</html>
+
